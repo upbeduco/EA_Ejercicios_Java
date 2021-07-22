@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.StdOut;
 
 public class Fecha {
 
@@ -23,7 +24,8 @@ public class Fecha {
 
 
     public static void main(String[] args) {
-
+        StdOut.println("Ejemplo ADT Fecha");
+        
     }
 
 
