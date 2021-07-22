@@ -2,29 +2,23 @@ import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
 
-public class Pila<Item> implements Iterable<Item> {
+public class Pila<Item> {
 
     private Item[] pila;
     private int n;
 
     @SuppressWarnings("unchecked")
     public Pila(int max) {
-        pila = (Item[]) new Object[max];
+        // TODO: instanciar el arreglo para la pila
     }
 
     public void push(Item s) {
-        if (n == pila.length)
-            resize(2*n);
-        pila[n++] = s;
+        // TODO: Implementar el método
     }
 
     public Item pop() throws Exception {
-        if (n == 0)
-            throw new Exception("La pila esta vacia");
-        Item s = pila[--n];
-        pila[n] = null;
-        if (n<pila.length/2) resize(pila.length/2);
-        return s;
+        // TODO: Implementar el método
+        return null;
     }
 
     public boolean isEmpty() {
@@ -35,52 +29,18 @@ public class Pila<Item> implements Iterable<Item> {
         return n;
     }
 
-    @Override
-    public Iterator<Item> iterator() {
-        return new IteradorDePila();
-    }
+    // TODO: Dar una implementación del Iterador para la pila
+    // implements Iterable<Item>
+    // public Iterator<Item> iterator() {
 
 
-    private class IteradorDePila implements Iterator<Item> {
-
-        private int pos = n;
-
-        @Override
-        public boolean hasNext() {
-            return pos>0;
-        }
-
-        @Override
-        public Item next() {
-            Item x = pila[--pos];
-            return x;
-        }
-
-    }
-
-    @SuppressWarnings("unchecked")
-    private void resize(int m) {
-        Item[] nuevo = (Item[]) new Object[m];
-        for(int i=0; i<n; i++)
-            nuevo[i] = pila[i];
-        pila = nuevo;
-    }
+    // TODO: Implementar el procedimiento para cambiar el tamaño del arreglo
+    // @SuppressWarnings("unchecked")
+    // private void resize(int m)
 
 
     public static void main(String[] args) throws Exception {
-        Pila<String> p = new Pila<>(1);
-        p.push("Hola");
-        p.push("Mundo");
-        p.push("El");
-        p.push("Fin");
-        p.push("se");
-        p.push("acerca");
-
-        for(Iterator<String> i = p.iterator(); i.hasNext(); ) {
-            String x = i.next();
-            StdOut.println(x);
-        }
-
+        // TODO: Implementar algunos ejemplos de uso de la pila
     }
 
 

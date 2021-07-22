@@ -14,20 +14,11 @@ public class PilaConLista<Item> implements Iterable<Item> {
     private int n;
 
     public void push(Item s) {
-        Nodo tmp  =new Nodo();
-        tmp.item = s;
-        tmp.sig = first;
-        first = tmp;
-        n++;
+        // TODO: Implementar
     }
 
     public Item pop() {
-        if (first!=null) {
-            Item s = first.item;
-            first = first.sig;
-            n--;
-            return s;
-        }
+        // TODO: Implementar
         return null;
     }
 
@@ -40,40 +31,12 @@ public class PilaConLista<Item> implements Iterable<Item> {
     }
 
 
-    @Override
-    public Iterator<Item> iterator() {
-        return new IteradorDePila();
-    }
-
-
-    private class IteradorDePila implements Iterator<Item> {
-
-        private Nodo pos = first;
-
-        @Override
-        public boolean hasNext() {
-            return pos!=null;
-        }
-
-        @Override
-        public Item next() {
-            Item x = pos.item;
-            pos = pos.sig;
-            return x;
-        }
-
-    }
+    // TODO: Implementar el iterador de la pila
+    // public Iterator<Item> iterator() {
 
 
     public static void main(String[] args) throws Exception {
-        PilaConLista<String> p = new PilaConLista<>();
-        p.push("Hola");
-        p.push("Mundo");
-
-        for(String s: p) {
-            StdOut.println(s);
-        }
-        StdOut.println(p.size());
+        // TODO: Implementar algunos ejemplos de uso de la PilaConLista
 
     }
 
