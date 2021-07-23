@@ -2,5 +2,9 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "d:\\UPB\\ALG\\algs4.jar"
+    ],
+    "java.project.sourcePaths": [
+        "01-ADT",
+        "06-MétodosDeBúsqueda"
     ]
 }

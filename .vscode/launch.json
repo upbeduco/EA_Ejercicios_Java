@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ContadorPalabras",
+            "request": "launch",
+            "mainClass": "ContadorPalabras",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9"
+        },
+        {
+            "type": "java",
             "name": "Launch StringDemo",
             "request": "launch",
             "mainClass": "StringDemo",

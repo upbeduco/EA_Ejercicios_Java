@@ -22,6 +22,9 @@ import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.MaxPQ;
 import edu.princeton.cs.algs4.RedBlackBST;
 
+/**
+ * Un ADT para representar los libros en la coleccion
+ */
 class Book {
     private int bookID;
     private String title;
@@ -72,7 +75,7 @@ class Book {
 class BookComparator implements Comparator<Book> {
 
     public int compare(Book a, Book b) {
-
+        // TODO: Hacer un comparador de libros
 
         return 0;
     }
@@ -82,8 +85,6 @@ class BookComparator implements Comparator<Book> {
 
 public class Goodreads {
 
-    static TreeMap<String, Bag<Book>> librosPorAutor = new TreeMap<>(); // ~ N espacio
-    static BST<Integer, Integer> librosPorAnno = new BST<>(); // ~ N espacio
 
     public static void readFile(String file) {
         In in = new In(file);
@@ -92,18 +93,7 @@ public class Goodreads {
             String l = in.readLine();
             try {
                 Book b = new Book(l);
-                // Arbol de libros por autor
-                if (!librosPorAutor.containsKey(b.getAuthors()))
-                    librosPorAutor.put(b.getAuthors(), new Bag<Book>());
-                Bag<Book> libros = librosPorAutor.get(b.getAuthors());
-                libros.add(b);
-                // Arbol de cantidad de libros por a~no
-                Calendar c = Calendar.getInstance();
-                c.setTime(b.getPublication_date());
-                Integer anno = c.get(Calendar.YEAR);
-                if (! librosPorAnno.contains(anno))
-                    librosPorAnno.put(anno, 0);
-                librosPorAnno.put(anno, librosPorAnno.get(anno)+1);
+                // TODO: Agregar el libro a las estructuras necesarias para hacer las búsquedas
                 
             }
             catch(ParseException e) { 
@@ -116,35 +106,25 @@ public class Goodreads {
     }
 
 
-    public static void librosPorAutor(String autor) { // ~ 2*M*ln(N)
-        Bag<Book> libros = librosPorAutor.get(autor); // ~ 2*ln(N) peor caso
-        double suma = 0;
-        for(Book b: libros) { // ~ M lineal en los libros de un autor
-            suma += b.getAverage_rating();
-        }
-        StdOut.println(autor+" : Cantidad="+libros.size()+" \t Promedio="+(suma/libros.size()));
+    public static void librosPorAutor(String autor) {
+        // TODO: Implementar un metodo para calcular el promedio de calificacion
+        // de los libros de un autor
     }
 
-    public static void librosPorAnno() { // Tiempo total ~ 2*N*ln(N)
-        for(Integer anno: librosPorAnno.keys()) { // ~N
-            StdOut.println(anno+" : "+librosPorAnno.get(anno)); // ~ 2*ln(N) caso promedio
-        }
+    public static void librosPorAnno() { 
+        // TODO: Calcular cuantos libros aparecen registrados por cada año
 
     }
 
     public static void topPorAutor() {
-
+        // TODO: Calcular los 5 libros mejor calificados por cada autor
 
     }
 
     public static void main(String[] args) {
         String ruta = "D:\\UPB\\Datasets\\books.csv";
         readFile(ruta);
-        librosPorAutor("J.K. Rowling/Mary GrandPré");
-        // librosPorAutor("J.R.R. Tolkien");
-        // librosPorAutor("Gabriel García Márquez");
-        // librosPorAnno();
-        // topPorAutor();
+
     }
 
 
