@@ -21,7 +21,12 @@ public class Fecha {
     }
 
 
+    // TODO: Hacer una función de biblioteca para determinar si un año es biciesto
+    // public static boolean esBiciesto(int año) {}
 
+    // TODO: Hacer una función de biblioteca que lea una fecha por cosola y devuelva una instancia
+    //       (Este es un ejemplo del patrón "Factory")
+    // public static Fecha leerFecha() {}
 
     public static void main(String[] args) {
         StdOut.println("Ejemplo ADT Fecha");
