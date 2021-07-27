@@ -6,30 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch ContadorPalabras",
-            "request": "launch",
-            "mainClass": "ContadorPalabras",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9"
-        },
-        {
-            "type": "java",
-            "name": "Launch StringDemo",
-            "request": "launch",
-            "mainClass": "StringDemo",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9"
-        },
-        {
-            "type": "java",
-            "name": "Launch Fecha",
-            "request": "launch",
-            "mainClass": "Fecha",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9"
-        },
-        {
-            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
+            "vmArgs": "-enableassertions"
         }
     ]
 }
