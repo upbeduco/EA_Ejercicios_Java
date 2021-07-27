@@ -1,3 +1,5 @@
+package upb.ea.ea06_MétodosDeBúsqueda;
+
 import java.util.HashMap;
 
 import edu.princeton.cs.algs4.StdIn;

@@ -1,3 +1,5 @@
+package upb.ea.ea01_ADT;
+
 /**
  * Definicion del API para el ADT Contador
  *  

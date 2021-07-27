@@ -1,3 +1,5 @@
+package upb.ea.ea07_Grafos;
+
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.algs4.StdOut;
 

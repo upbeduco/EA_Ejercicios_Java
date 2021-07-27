@@ -1,3 +1,5 @@
+package upb.ea.ea02_EstructurasBasicas;
+
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
@@ -32,7 +34,7 @@ public class PilaConLista<Item> implements Iterable<Item> {
 
 
     // TODO: Implementar el iterador de la pila
-    // public Iterator<Item> iterator() {
+    public Iterator<Item> iterator() { return null; }
 
 
     public static void main(String[] args) throws Exception {

@@ -1,3 +1,5 @@
+package upb.ea.ea01_ADT;
+
 import edu.princeton.cs.algs4.StdOut;
 
 public class Fecha {

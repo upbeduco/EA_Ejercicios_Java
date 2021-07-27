@@ -1,3 +1,5 @@
+package upb.ea.ea02_EstructurasBasicas;
+
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
@@ -41,6 +43,7 @@ public class Pila<Item> {
 
     public static void main(String[] args) throws Exception {
         // TODO: Implementar algunos ejemplos de uso de la pila
+        StdOut.print("Ejemplo Pila");
     }
 
 

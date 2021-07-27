@@ -1,3 +1,5 @@
+package upb.ea.ea03_AnalisisDeAlgoritmos;
+
 class Promedio {
 
     double promedio(double[] x) { // Tamaño entrada x.length=N

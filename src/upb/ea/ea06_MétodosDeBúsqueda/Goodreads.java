@@ -1,3 +1,5 @@
+package upb.ea.ea06_MétodosDeBúsqueda;
+
 /**
  * Ejemplos de uso de la tabla de símbolos ordenada
  * 
