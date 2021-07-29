@@ -6,6 +6,43 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StringDemo",
+            "request": "launch",
+            "mainClass": "upb.ea.ea01_ADT.tmp.StringDemo",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoPunto",
+            "request": "launch",
+            "mainClass": "upb.ea.ea01_ADT.tmp.DemoPunto",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Punto2DPolar",
+            "request": "launch",
+            "mainClass": "upb.ea.ea01_ADT.tmp.Punto2DPolar",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Launch Punto2DCartesiano",
+            "request": "launch",
+            "mainClass": "upb.ea.ea01_ADT.tmp.Punto2DCartesiano",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClientePunto",
+            "request": "launch",
+            "mainClass": "upb.ea.ea01_ADT.tmp.ClientePunto",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}",
