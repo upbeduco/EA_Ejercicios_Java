@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Pila",
+            "request": "launch",
+            "mainClass": "upb.ea.ea02_EstructurasBasicas.tmp.Pila",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_192b41b9",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
             "name": "Launch StringDemo",
             "request": "launch",
             "mainClass": "upb.ea.ea01_ADT.tmp.StringDemo",

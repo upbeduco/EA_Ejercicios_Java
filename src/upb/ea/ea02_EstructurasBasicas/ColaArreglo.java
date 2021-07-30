@@ -4,21 +4,20 @@ import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
 
-public class Pila<Item> {
+public class ColaArreglo {
 
-    private Item[] pila;
+    private String[] cola;
     private int n;
 
-    @SuppressWarnings("unchecked")
-    public Pila(int max) {
+    public ColaArreglo(int max) {
         // TODO: instanciar el arreglo para la pila
     }
 
-    public void push(Item s) {
+    public void enqueue(String s) {
         // TODO: Implementar el método
     }
 
-    public Item pop() throws Exception {
+    public String dequeue() throws Exception {
         // TODO: Implementar el método
         return null;
     }
@@ -43,10 +42,18 @@ public class Pila<Item> {
 
     public static void main(String[] args) throws Exception {
         // TODO: Implementar algunos ejemplos de uso de la pila
-        StdOut.print("Ejemplo Pila");
+        StdOut.println("Ejercicio Cola");
+
     }
 
 
 
 }
     
+
+// Ejercicios
+// 1. Completar la implementación de la Cola utilizando un arreglo
+// 2. Hacer algunas pruebas unitarias de la implementación
+// 3. Hacer la implementacion genérica utilizando un parámetro de tipo
+// 4. Implementar el iterador de la cola utilizando el orden FIFO
+// 5. Hacer algunos ejemplos utilizando Colas con distintos tipos de datos
