@@ -11,7 +11,7 @@ public class Fecha {
     // private static final byte[] DIAS_MES = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 
-    Fecha(int a, byte m, byte d) throws Exception {
+    public Fecha(int a, byte m, byte d) throws Exception {
         año = a;
         mes = m;
         dia = d;
