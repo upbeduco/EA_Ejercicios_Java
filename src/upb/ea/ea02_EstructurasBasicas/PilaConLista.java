@@ -46,3 +46,10 @@ public class PilaConLista<Item> implements Iterable<Item> {
 
 }
     
+
+// Ejercicios:
+// 1. Completar la implementación del API de la Pila
+// 2. Hacer pruebas unitarias
+// 3. Implementar la interfacez Iterable
+// 4. Hacer algunos ejemplos con iteración
+
