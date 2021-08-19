@@ -8,7 +8,7 @@ public class rpn {
     public static void main(String[] arg) throws Exception {
 
         PilaConLista<Double> stack = new PilaConLista<>();
-        while( StdIn.hasNextLine() ) {
+        while( ! StdIn.isEmpty() ) {
             String line = StdIn.readString();
             // TODO: Terminar la implementación de la calculadora RPN
         }
