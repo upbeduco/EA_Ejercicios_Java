@@ -35,7 +35,7 @@ public class ParsingImdb {
     }
 
     public static void main(String[] args) throws ParseException {
-        String url = "https://jmlon.github.io/Estructuras-Algoritmos/talleres/datasets/IMDb%20movies.csv";
+        String url = "IMDb%20movies.csv";
         In in = new In(url);
         in.readLine(); // ignore first line
         int counter = 0;
