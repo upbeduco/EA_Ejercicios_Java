@@ -46,6 +46,8 @@ public class ParsingImdb {
 
             String[] fields = null;
             try {
+                // Solucion para no separar el campo de actores encerrado en comillas:
+                // Tomada de: https://stackoverflow.com/questions/1757065/java-splitting-a-comma-separated-string-but-ignoring-commas-in-quotes
                 fields = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
                 // StdOut.println(fields.length);
                 Pelicula p = new Pelicula();
