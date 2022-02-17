@@ -73,14 +73,10 @@ public class GeneradorNombres {
     }
 
     public static void main(String[] args) {
-        // yFromInput();
+        // arrayFromInput();
         String[] nombres = generar(10);
         for (String n : nombres)
             StdOut.println(n);
     }
 
 }
-
-//
-
-//
