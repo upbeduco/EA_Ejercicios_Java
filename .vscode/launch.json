@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Pareja",
+            "request": "launch",
+            "mainClass": "tmp.Pareja",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_c1291e8"
+        },
+        {
+            "type": "java",
             "name": "Launch GeneradorNombres",
             "request": "launch",
             "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.GeneradorNombres",
