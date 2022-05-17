@@ -11,5 +11,10 @@ Algorithms, 4th ed.
 
 
 ## Compilación en consola
-javac -g -cp ./build:./lib/algs4.jar -d ./build ./src/upb/ea/ea01_ADT/Contador.java
+```
+# A simple file
+javac -g -cp ./lib/algs4.jar -d ./build ./src/upb/ea/ea01_ADT/Contador.java
 
+# All the files
+javac -g -cp ./lib/algs4.jar -d ./build $(find ./src -name '*.java')
+```
