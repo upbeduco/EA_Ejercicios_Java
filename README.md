@@ -12,7 +12,7 @@ Algorithms, 4th ed.
 
 ## Compilación en consola
 ```
-# A simple file
+# A single file
 javac -g -cp ./lib/algs4.jar -d ./build ./src/upb/ea/ea01_ADT/Contador.java
 
 # All the files
