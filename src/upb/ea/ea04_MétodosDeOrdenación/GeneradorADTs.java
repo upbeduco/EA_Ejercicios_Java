@@ -86,6 +86,7 @@ public class GeneradorADTs {
         for (Person p : personas)
             StdOut.println(p);
 
+        // TODO: Fix handling of UTF-8 characters in Windows
         String test ="привет"; 
         System.out.println(test);
         String test2 = new String( test.getBytes(StandardCharsets.UTF_8), StandardCharsets.UTF_16);

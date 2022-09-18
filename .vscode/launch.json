@@ -9,14 +9,16 @@
             "name": "Launch OrdenarADTs",
             "request": "launch",
             "mainClass": "upb.ea.ea04_MétodosDeOrdenación.OrdenarADTs",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b"
+            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b",
+            "encoding": "UTF-8"
         },
         {
             "type": "java",
             "name": "Launch GeneradorADTs",
             "request": "launch",
             "mainClass": "upb.ea.ea04_MétodosDeOrdenación.GeneradorADTs",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b"
+            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b",
+            "encoding": "UTF-8"
         },
         {
             "type": "java",
