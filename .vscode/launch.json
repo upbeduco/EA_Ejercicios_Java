@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch OrdenarADTs",
+            "request": "launch",
+            "mainClass": "upb.ea.ea04_MétodosDeOrdenación.OrdenarADTs",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b"
+        },
+        {
+            "type": "java",
+            "name": "Launch GeneradorADTs",
+            "request": "launch",
+            "mainClass": "upb.ea.ea04_MétodosDeOrdenación.GeneradorADTs",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b"
+        },
+        {
+            "type": "java",
             "name": "Launch EjemploBibliotecas",
             "request": "launch",
             "mainClass": "upb.ea.ea01_ADT.EjemploBibliotecas",
