@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GeneradorADTs",
+            "request": "launch",
+            "mainClass": "upb.ea.ea04_MétodosDeOrdenación.GeneradorADTs",
+            "projectName": "Ejercicios-EstructurasAlgoritmos_bd80d6b5"
+        },
+        {
+            "type": "java",
             "name": "Launch OrdenarADTs",
             "request": "launch",
             "mainClass": "upb.ea.ea04_MétodosDeOrdenación.OrdenarADTs",

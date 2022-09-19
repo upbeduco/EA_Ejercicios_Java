@@ -1,7 +1,8 @@
 {
   "java.project.referencedLibraries": [
     "lib/**/*.jar",
-    "d:\\GIT\\AWS\\UPB\\EstructurasYAlgoritmos\\Java\\Libro\\algs4.jar"
+    "d:\\GIT\\AWS\\UPB\\EstructurasYAlgoritmos\\Java\\Libro\\algs4.jar",
+    "c:\\tmp\\algs4.jar"
   ],
   "java.project.sourcePaths": [
     "src"

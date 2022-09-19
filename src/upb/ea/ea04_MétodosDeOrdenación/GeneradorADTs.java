@@ -61,20 +61,20 @@ public class GeneradorADTs {
     public static List<Person> generar(int n) {
         ArrayList<Person> personas = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            int genero = StdRandom.uniform(0, 2);
+            int genero = StdRandom.uniformInt(0, 2);
             String nombre1, nombre2;
             if (genero == 0) {
-                nombre1 = mujer[StdRandom.uniform(mujer.length)];
+                nombre1 = mujer[StdRandom.uniformInt(mujer.length)];
                 nombre1 = new String(nombre1.getBytes(), StandardCharsets.UTF_8);
-                nombre2 = mujer[StdRandom.uniform(mujer.length)];
+                nombre2 = mujer[StdRandom.uniformInt(mujer.length)];
                 nombre2 = new String(nombre2.getBytes(), StandardCharsets.UTF_8);
             } else {
-                nombre1 = mujer[StdRandom.uniform(hombre.length)];
-                nombre2 = mujer[StdRandom.uniform(hombre.length)];
+                nombre1 = mujer[StdRandom.uniformInt(hombre.length)];
+                nombre2 = mujer[StdRandom.uniformInt(hombre.length)];
             }
-            String apellido1 = apellidos[StdRandom.uniform(apellidos.length)];
-            String apellido2 = apellidos[StdRandom.uniform(apellidos.length)];
-            Person p = new Person(nombre1+" "+nombre2, apellido1+" "+apellido2, StdRandom.uniform(0, 80), (float) StdRandom.uniform(2.0, 100.0));
+            String apellido1 = apellidos[StdRandom.uniformInt(apellidos.length)];
+            String apellido2 = apellidos[StdRandom.uniformInt(apellidos.length)];
+            Person p = new Person(nombre1+" "+nombre2, apellido1+" "+apellido2, StdRandom.uniformInt(0, 80), (float) StdRandom.uniformDouble(2.0, 100.0));
             personas.add(p);
         }
         return personas;
