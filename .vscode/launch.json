@@ -6,33 +6,24 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch GeneradorADTs",
-            "request": "launch",
-            "mainClass": "upb.ea.ea04_MétodosDeOrdenación.GeneradorADTs",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_bd80d6b5"
-        },
-        {
-            "type": "java",
-            "name": "Launch OrdenarADTs",
-            "request": "launch",
-            "mainClass": "upb.ea.ea04_MétodosDeOrdenación.OrdenarADTs",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b",
-            "encoding": "UTF-8"
-        },
-        {
-            "type": "java",
-            "name": "Launch GeneradorADTs",
-            "request": "launch",
-            "mainClass": "upb.ea.ea04_MétodosDeOrdenación.GeneradorADTs",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_61a2511b",
-            "encoding": "UTF-8"
-        },
-        {
-            "type": "java",
             "name": "Launch EjemploBibliotecas",
             "request": "launch",
             "mainClass": "upb.ea.ea01_ADT.EjemploBibliotecas",
-            "projectName": "Ejercicios-EstructurasAlgoritmos_c1291e8"
+            "projectName": "Ejercicios-EstructurasAlgoritmos-Java_ac3ecc68"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContadorCliente",
+            "request": "launch",
+            "mainClass": "upb.ea.ea01_ADT.ContadorCliente",
+            "projectName": "Ejercicios-EstructurasAlgoritmos-Java_ac3ecc68"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContadorCliente",
+            "request": "launch",
+            "mainClass": "ContadorCliente",
+            "projectName": "Ejercicios-EstructurasAlgoritmos-Java_ac3ecc68"
         }
     ]
 }

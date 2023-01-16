@@ -25,3 +25,4 @@ hs_err_pid*
 # JML extras
 **/tmp
 build/**
+bin/**
