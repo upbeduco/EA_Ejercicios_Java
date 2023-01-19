@@ -27,7 +27,7 @@ javac -g -cp ./lib/algs4.jar -d ./build $(find ./src -name '*.java')
 4. Cuando diga que "HelloWorld.java" no está en el classpath, aceptar la opción "Add to source path".
 5. Si se demora mucho, dar "Cancel" y volver a intentar `Run Java`.
 6. Para incluir las bibliotecas del texto guia, subir el archivo `algs4.jar` a la carpeta `lib` del proyecto.
-7. Si no reconoce la libreria, ir a `Java Projects` y ejecutar `Clean Workspace`
+7. Si no reconoce la biblioteca, ir a `Java Projects` y ejecutar `Configure Classpath` y en "Referenced Libraries" agregar `lib/alg4.jar`.
 
 
 
