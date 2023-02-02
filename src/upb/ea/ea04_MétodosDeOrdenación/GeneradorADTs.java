@@ -69,8 +69,8 @@ public class GeneradorADTs {
                 nombre2 = mujer[StdRandom.uniformInt(mujer.length)];
                 nombre2 = new String(nombre2.getBytes(), StandardCharsets.UTF_8);
             } else {
-                nombre1 = mujer[StdRandom.uniformInt(hombre.length)];
-                nombre2 = mujer[StdRandom.uniformInt(hombre.length)];
+                nombre1 = hombre[StdRandom.uniformInt(hombre.length)];
+                nombre2 = hombre[StdRandom.uniformInt(hombre.length)];
             }
             String apellido1 = apellidos[StdRandom.uniformInt(apellidos.length)];
             String apellido2 = apellidos[StdRandom.uniformInt(apellidos.length)];

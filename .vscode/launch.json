@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GeneradorADTs",
+            "request": "launch",
+            "mainClass": "upb.ea.ea04_MétodosDeOrdenación.GeneradorADTs",
+            "projectName": "EA_Ejercicios_Java_7eb9b2ae"
+        },
+        {
+            "type": "java",
             "name": "Launch EjemploBibliotecas",
             "request": "launch",
             "mainClass": "upb.ea.ea01_ADT.EjemploBibliotecas",
