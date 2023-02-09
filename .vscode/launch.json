@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch runThreeSum",
+            "request": "launch",
+            "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.runThreeSum",
+            "projectName": "EA_Ejercicios_Java_acac2f72"
+        },
+        {
+            "type": "java",
             "name": "Launch GeneradorADTs",
             "request": "launch",
             "mainClass": "upb.ea.ea04_MétodosDeOrdenación.GeneradorADTs",
