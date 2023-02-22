@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Dataset",
+            "request": "launch",
+            "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.Dataset",
+            "projectName": "EA_Ejercicios_Java_69fac66a"
+        },
+        {
+            "type": "java",
             "name": "Launch runThreeSum",
             "request": "launch",
             "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.runThreeSum",
