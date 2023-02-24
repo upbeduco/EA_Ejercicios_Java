@@ -1,5 +1,6 @@
 package upb.ea.ea03_AnalisisDeAlgoritmos;
 
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdRandom;
 
@@ -59,6 +60,12 @@ public class Dataset {
         return ds;
     }
 
+    private static double[] clusterCenter(int label) {
+        String s = Integer.toBinaryString(label);
+        StdOut.println(label+" : "+s);
+        return null;
+    }
+
 
     public void plotPoints() {
         StdDraw.setXscale(-5, 5);
@@ -74,8 +81,13 @@ public class Dataset {
 
 
     public static void main(String[] args) {
-        Dataset ds = generateClusters(20, 2);
-        ds.plotPoints();
+        // Dataset ds = generateClusters(20, 2);
+        // ds.plotPoints();
+
+        clusterCenter(0);
+        clusterCenter(1);
+        clusterCenter(2);
+        clusterCenter(3);
     }
 
 
