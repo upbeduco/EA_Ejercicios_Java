@@ -9,6 +9,13 @@
             "name": "Launch Dataset",
             "request": "launch",
             "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.Dataset",
+            "projectName": "EA_Ejercicios_Java_7eb9b2ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dataset",
+            "request": "launch",
+            "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.Dataset",
             "projectName": "EA_Ejercicios_Java_69fac66a"
         },
         {
