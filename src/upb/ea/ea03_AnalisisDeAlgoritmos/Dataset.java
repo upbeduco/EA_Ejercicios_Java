@@ -2,9 +2,11 @@ package upb.ea.ea03_AnalisisDeAlgoritmos;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.awt.*;
+import java.util.Arrays;
 
 public class Dataset {
 
@@ -43,14 +45,14 @@ public class Dataset {
         return n;
     }
 
-    public static Dataset generateClusters(int n, int d) {
-        double[][] points = new double[n][d];
+    public static Dataset generateClusters2D(int n) {
+        double[][] points = new double[n][2];
         int[] labels = new int[n];
         for(int i=0; i<n; i++) {
             double mu = 1.0;
             double sigma = 0.5;
             labels[i] = 0;
-            if (StdRandom.uniform() >= 0.5) { mu = -1.0; labels[i]=1; }
+            if (StdRandom.uniformDouble() >= 0.5) { mu = -1.0; labels[i]=1; }
             double x = StdRandom.gaussian(mu, sigma);
             double y = StdRandom.gaussian(mu, sigma);
             points[i][0] = x;
@@ -80,14 +82,55 @@ public class Dataset {
     }
 
 
-    public static void main(String[] args) {
-        // Dataset ds = generateClusters(20, 2);
-        // ds.plotPoints();
+    private static double[][] hypercube(int d) {
+        int n = 1<<d;
+        double[][] vertices = new double[n][d];
+        int[] powers = new int[d];
+        for(int i=0,j=1; i<d; i++,j<<=1) powers[i] = j;
+        // StdOut.println(Arrays.toString(powers));
+        for(int i=0; i<n; i++)
+            for(int j=0; j<d; j++)
+                vertices[i][j] = (i&powers[j])!=0 ? -1 : 1;
+        // for(double[] a : vertices)
+        //     StdOut.println(Arrays.toString(a));
+        return vertices;
+    }
 
-        clusterCenter(0);
-        clusterCenter(1);
-        clusterCenter(2);
-        clusterCenter(3);
+
+    public static double[] gaussianPoint(double[] centroid, double sigma) {
+        double[] point = new double[centroid.length];
+        for(int i=0; i<centroid.length; i++)
+            point[i] = StdRandom.gaussian(centroid[i], sigma);
+        return point;
+    }
+
+    public static Dataset generateClusters(int n, int dim, int lab) {
+        double[][] points = new double[n][dim];
+        int[] labels = new int[n];
+        double sigma = 0.5;
+        double[][] centroids = hypercube(dim);
+        for(int i=0; i<n; i++) {
+            labels[i] = StdRandom.uniformInt(lab);
+            points[i] = gaussianPoint(centroids[labels[i]], sigma);
+        }
+        return new Dataset(points, labels);
+    }
+
+
+    public static void main(String[] args) {
+
+        int n=20;
+
+        // Generar un dataset de n puntos en 2D
+        Dataset ds1 = generateClusters2D(n);
+        ds1.plotPoints();
+
+        // Generar un dataset de n puntos en 3D
+        Dataset ds2 = generateClusters(n, 3, 8);
+        double[][] points = ds2.getPointsArray();
+        for(double[] x: points)
+            StdOut.println(Arrays.toString(x));
+
     }
 
 
