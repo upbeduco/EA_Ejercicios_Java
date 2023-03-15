@@ -2,8 +2,19 @@ package upb.ea.ea02_EstructurasBasicas;
 
 import java.util.Iterator;
 
+/**
+ * ListaSimple : Implementacion basica de la lista simplemente enlazada
+ * Se proponen como ejercicios operaciones adicionales de la 
+ * la lista simple.
+ * 
+ * @author: Jorge Londoño
+ * 
+ */
 public class ListaSimple<T> implements Iterable<T> {
 
+    /**
+     * Nodo representa un nodo de la lista simplemente enlazada
+     */
     private class Nodo {
         T item;
         Nodo sig;
@@ -12,6 +23,10 @@ public class ListaSimple<T> implements Iterable<T> {
     private Nodo first=null;
     private int n=0;
 
+    /**
+     * Agregar un item a la cabeza de la lista
+     * @param item
+     */
     public void addHead(T item) {
         Nodo x = new Nodo();
         x.item = item;
@@ -20,6 +35,11 @@ public class ListaSimple<T> implements Iterable<T> {
         n++;
     }
 
+    /**
+     * Remover el primer nodo de la lista
+     * @return item contenido en el nodo eliminado
+     * @throws Exception
+     */
     public T removeHead() throws Exception {
         if (first == null)
             throw new Exception("Lista vacia");
@@ -29,19 +49,32 @@ public class ListaSimple<T> implements Iterable<T> {
         return i;
     }
 
+    /**
+     * True si la lista esta vacia
+     * @return
+     */
     public boolean isEmpty() {
         return n == 0;
     }
 
+    /**
+     * @return Longitud de la lista
+     */
     public int size() {
         return n;
     }
 
+    /**
+     * Obtener un iterador para la lista
+     */
     @Override
     public Iterator<T> iterator() {
         return new IteradorLista();
     }
 
+    /**
+     * Implementacion del iterador para la lista simple
+     */
     private class IteradorLista implements Iterator<T> {
 
         private Nodo pos = first;
@@ -81,6 +114,9 @@ public class ListaSimple<T> implements Iterable<T> {
 
     /** Obtener una nueva ListaSimple con todos los items en orden inverso */
     public ListaSimple<T> invert() { return null; }
+
+    /** Dividir una lista en dos mitades */
+    public ListaSimple<T>[] splitList() { return null; }
 
     public static void main(String[] args) throws Exception {
         
