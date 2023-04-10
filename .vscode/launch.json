@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ContadorPalabras",
+            "request": "launch",
+            "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.ContadorPalabras",
+            "projectName": "EA_Ejercicios_Java_247bef93"
+        },
+        {
+            "type": "java",
             "name": "Launch Dataset",
             "request": "launch",
             "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.Dataset",
