@@ -41,7 +41,10 @@ public class ContadorPalabras {
 
     public static void main(String[] args) {
 
-        In fileInput = new In("../gabriel_garcia_marquez_cien_annos_soledad.txt");
+        // String fname = "../gabriel_garcia_marquez_cien_annos_soledad.txt";
+        String fname = "../elRenacuajoPaseador.txt";
+
+        In fileInput = new In(fname);
         
         Stopwatch sw = new Stopwatch();
         BinarySearchST<String, Integer> wc = wordCount(3, fileInput);
