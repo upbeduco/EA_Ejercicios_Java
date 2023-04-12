@@ -41,8 +41,8 @@ public class ContadorPalabras {
 
     public static void main(String[] args) {
 
-        // String fname = "../gabriel_garcia_marquez_cien_annos_soledad.txt";
-        String fname = "../elRenacuajoPaseador.txt";
+        String fname = "../gabriel_garcia_marquez_cien_annos_soledad.txt";
+        // String fname = "../elRenacuajoPaseador.txt";
 
         In fileInput = new In(fname);
         
@@ -61,6 +61,7 @@ public class ContadorPalabras {
         // TODO: Obtener la M palabras de mayor frecuencia
 
 
+        // UTF-8 Falla solo en Windows
         // Varios intentos para leer correctamente el archivo en formato UTF-8:
         // StdOut.println(readTextFile1("../gabriel_garcia_marquez_cien_annos_soledad.txt"));
         // StdOut.println(readTextFile2("../gabriel_garcia_marquez_cien_annos_soledad.txt"));

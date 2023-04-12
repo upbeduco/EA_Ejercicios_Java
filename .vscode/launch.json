@@ -9,6 +9,13 @@
             "name": "ContadorPalabras",
             "request": "launch",
             "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.ContadorPalabras",
+            "projectName": "EA_Ejercicios_Java_69fac66a"
+        },
+        {
+            "type": "java",
+            "name": "ContadorPalabras",
+            "request": "launch",
+            "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.ContadorPalabras",
             "projectName": "EA_Ejercicios_Java_247bef93"
         },
         {
