@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CustomerSupportTwit",
+            "request": "launch",
+            "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.CustomerSupportTwit",
+            "projectName": "EA_Ejercicios_Java_69fac66a"
+        },
+        {
+            "type": "java",
             "name": "DelayRecord",
             "request": "launch",
             "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.DelayRecord",
