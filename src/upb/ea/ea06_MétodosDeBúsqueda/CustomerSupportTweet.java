@@ -34,7 +34,7 @@ public class CustomerSupportTweet {
      * @param filename
      * @return ArrayList of CustomerSupportTwit objects
      */
-    public static ArrayList<CustomerSupportTweet> leerTwitsCsv(String filename) {
+    public static ArrayList<CustomerSupportTweet> leerTweetsCsv(String filename) {
         int lineNumber = 0;
         ArrayList<CustomerSupportTweet> twits = new ArrayList<CustomerSupportTweet>();
         In in = new In(filename);
@@ -80,7 +80,7 @@ public class CustomerSupportTweet {
 
     public static void main(String[] args) {
         String filename = "/home/jmlon/tmp/Datasets/twcs.csv";
-        ArrayList<CustomerSupportTweet> twits = CustomerSupportTweet.leerTwitsCsv(filename);
+        ArrayList<CustomerSupportTweet> twits = CustomerSupportTweet.leerTweetsCsv(filename);
         System.out.println("Loaded " + twits.size() + " twits from " + filename);
         // for (CustomerSupportTwit twit : twits) {
         //     System.out.println(twit);
