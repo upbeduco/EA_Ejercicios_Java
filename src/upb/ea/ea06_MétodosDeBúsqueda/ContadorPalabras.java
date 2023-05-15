@@ -11,10 +11,14 @@ import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.TreeMap;
 
+import edu.princeton.cs.algs4.BST;
 import edu.princeton.cs.algs4.BinarySearchST;
 import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.RedBlackBST;
 import edu.princeton.cs.algs4.ST;
+import edu.princeton.cs.algs4.SeparateChainingHashST;
 import edu.princeton.cs.algs4.SequentialSearchST;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
@@ -22,14 +26,18 @@ import edu.princeton.cs.algs4.Stopwatch;
 public class ContadorPalabras {
        
 
-    public static BinarySearchST<String, Integer> wordCount(int minLen, In in) {
+    public static SeparateChainingHashST<String, Integer> wordCount(int minLen, In in) {
 
         // SequentialSearchST<String,Integer> st = new SequentialSearchST<>();
-        BinarySearchST<String,Integer> st = new BinarySearchST<>();
+        //BinarySearchST<String,Integer> st = new BinarySearchST<>();
+        //BST<String,Integer> st = new BST<>();
+        // RedBlackBST<String,Integer> st = new RedBlackBST<>();
+        //TreeMap<String,Integer> st = new TreeMap<>();
+        SeparateChainingHashST<String,Integer> st = new SeparateChainingHashST<>();
         // ST<String,Integer> st = new ST<>(); // Basada en arbol binario
         while (! in.isEmpty() ) {
             String word = in.readString().toLowerCase();
-            if (st.contains(word)) {
+            if (st.get(word) != null ) {
                 st.put(word, st.get(word)+1);
             }
             else {
@@ -47,7 +55,7 @@ public class ContadorPalabras {
         In fileInput = new In(fname);
         
         Stopwatch sw = new Stopwatch();
-        BinarySearchST<String, Integer> wc = wordCount(3, fileInput);
+        SeparateChainingHashST<String, Integer> wc = wordCount(3, fileInput);
         double tiempo = sw.elapsedTime();
 
         for(String w: wc.keys()) {

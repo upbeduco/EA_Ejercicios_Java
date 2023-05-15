@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ContadorPalabras",
+            "request": "launch",
+            "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.ContadorPalabras",
+            "projectName": "EA_Ejercicios_Java_7eb9b2ae"
+        },
+        {
+            "type": "java",
             "name": "CustomerSupportTwit",
             "request": "launch",
             "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.CustomerSupportTwit",
