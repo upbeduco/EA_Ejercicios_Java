@@ -2,7 +2,7 @@
 
 ## Generales
 
-1. Hace diferencia en eficiencia reemplazar el arreglo de entrada por un ArrayList?
+1. Para cualquiera de los algoritmos de ordenación, hace diferencia en eficiencia reemplazar el arreglo de entrada por un ArrayList?
 2. Se quiere construir una lista ordenada partiendo de la lista vacía. Cada que llega un elemento, se agrega en la posición correspondiente de forma que se preserve el orden de la lista. Estimar el tiempo de peor caso para agregar N elementos a la lista.
 
 ## Mergesort
