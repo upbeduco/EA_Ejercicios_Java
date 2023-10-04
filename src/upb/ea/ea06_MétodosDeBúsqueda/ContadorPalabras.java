@@ -28,12 +28,12 @@ public class ContadorPalabras {
 
     public static SeparateChainingHashST<String, Integer> wordCount(int minLen, In in) {
 
-        // SequentialSearchST<String,Integer> st = new SequentialSearchST<>();
+        SequentialSearchST<String,Integer> st = new SequentialSearchST<>();
         //BinarySearchST<String,Integer> st = new BinarySearchST<>();
         //BST<String,Integer> st = new BST<>();
         // RedBlackBST<String,Integer> st = new RedBlackBST<>();
         //TreeMap<String,Integer> st = new TreeMap<>();
-        SeparateChainingHashST<String,Integer> st = new SeparateChainingHashST<>();
+        // SeparateChainingHashST<String,Integer> st = new SeparateChainingHashST<>();
         // ST<String,Integer> st = new ST<>(); // Basada en arbol binario
         while (! in.isEmpty() ) {
             String word = in.readString().toLowerCase();
