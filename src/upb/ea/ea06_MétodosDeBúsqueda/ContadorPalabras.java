@@ -26,7 +26,7 @@ import edu.princeton.cs.algs4.Stopwatch;
 public class ContadorPalabras {
        
 
-    public static SeparateChainingHashST<String, Integer> wordCount(int minLen, In in) {
+    public static SequentialSearchST<String, Integer> wordCount(int minLen, In in) {
 
         SequentialSearchST<String,Integer> st = new SequentialSearchST<>();
         //BinarySearchST<String,Integer> st = new BinarySearchST<>();
@@ -49,13 +49,13 @@ public class ContadorPalabras {
 
     public static void main(String[] args) {
 
-        String fname = "../gabriel_garcia_marquez_cien_annos_soledad.txt";
+        String fname = "gabriel_garcia_marquez_cien_annos_soledad.txt";
         // String fname = "../elRenacuajoPaseador.txt";
 
         In fileInput = new In(fname);
         
         Stopwatch sw = new Stopwatch();
-        SeparateChainingHashST<String, Integer> wc = wordCount(3, fileInput);
+        SequentialSearchST<String, Integer> wc = wordCount(3, fileInput);
         double tiempo = sw.elapsedTime();
 
         for(String w: wc.keys()) {
