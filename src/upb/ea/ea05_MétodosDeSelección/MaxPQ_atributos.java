@@ -5,7 +5,9 @@ import java.util.Comparator;
 import edu.princeton.cs.algs4.MaxPQ;
 import edu.princeton.cs.algs4.StdOut;
 
-
+/**
+ *  ADT Mascota
+ */
 class Mascota {
     private String nombre;
     private float peso;
