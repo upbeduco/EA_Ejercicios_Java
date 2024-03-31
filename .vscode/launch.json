@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListaDoble",
+            "request": "launch",
+            "mainClass": "upb.ea.ea02_EstructurasBasicas.ListaDoble",
+            "projectName": "EA_Ejercicios_Java_247bef93"
+        },
+        {
+            "type": "java",
             "name": "ContadorPalabras",
             "request": "launch",
             "mainClass": "upb.ea.ea06_MétodosDeBúsqueda.ContadorPalabras",
