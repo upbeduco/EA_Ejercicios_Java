@@ -24,11 +24,23 @@ public class Fecha {
 
 
     // TODO: Hacer una función de biblioteca para determinar si un año es biciesto
-    // public static boolean esBiciesto(int año) {}
+    // public static boolean isLeapYear(int año) {}
 
     // TODO: Hacer una función de biblioteca que lea una fecha por cosola y devuelva una instancia
     //       (Este es un ejemplo del patrón "Factory")
-    // public static Fecha leerFecha() {}
+    // public static Fecha readDate() {}
+
+
+    public boolean equals(Object other) {
+        // TODO: Completar el codigo
+        return false;
+    }
+
+    public String toString() {
+        // TODO: Completar el codigo
+        return "";
+    }
+
 
     public static void main(String[] args) {
         StdOut.println("Ejemplo ADT Fecha");
@@ -47,4 +59,4 @@ public class Fecha {
 // 5. Implementar un main que ejemplifique el uso del ADT
 // 6. Hacer una aplicación "cliente" que calcule cuantos dias faltan para el cumpleaños
 // 6. Implementar un método estático "Factory" que cree instancias a partir de datos ingresados por consola
-// 7. Implementar la interface Comparable y hacerle pruebas
+// 7. Implementar la interface Comparable y hacerle pruebas unitarias
