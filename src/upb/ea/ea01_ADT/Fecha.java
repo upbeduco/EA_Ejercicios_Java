@@ -18,7 +18,7 @@ public class Fecha {
     }
 
     public int diaDelAño() {
-
+        // TODO: Dar una implementacion para calcular el dia del año
         return 0;
     }
 
@@ -41,6 +41,12 @@ public class Fecha {
         return "";
     }
 
+
+    // TODO: Hacer la sobre-escritura del metodo equals
+    // public boolean equals(Object f) {}
+
+    // TODO: Hacer la sobre-escritura del metodo toString
+    // public String toString() {}
 
     public static void main(String[] args) {
         StdOut.println("Ejemplo ADT Fecha");

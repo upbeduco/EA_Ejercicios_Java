@@ -27,5 +27,12 @@ public class Punto2DCartesiano implements Punto2D {
         return 0;
     }
 
+    // TODO: Hacer la sobre-escritura del metodo equals
+    // public boolean equals(Object f) {}
+
+    // TODO: Hacer la sobre-escritura del metodo toString
+    // public String toString() {}
+
+
 }
 
