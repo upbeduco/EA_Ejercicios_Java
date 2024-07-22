@@ -9,22 +9,26 @@ package upb.ea.ea01_ADT;
  */
 public class Punto2DCartesiano implements Punto2D {
 
+    private double x,y;
+
+    public Punto2DCartesiano(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
     @Override
     public double getX() {
-        // TODO Auto-generated method stub
-        return 0;
+        return x;
     }
 
     @Override
     public double getY() {
-        // TODO Auto-generated method stub
-        return 0;
+        return y;
     }
 
     @Override
     public double distancia(Punto2D punto) {
-        // TODO Auto-generated method stub
-        return 0;
+        return Math.sqrt( (getX()-punto.getX())*(getX()-punto.getX()) + (getY()-punto.getY())*(getY()-punto.getY()) );
     }
 
     // TODO: Hacer la sobre-escritura del metodo equals
@@ -32,6 +36,16 @@ public class Punto2DCartesiano implements Punto2D {
 
     // TODO: Hacer la sobre-escritura del metodo toString
     // public String toString() {}
+
+    public static void main(String[] args) {
+        Punto2D p0 = new Punto2DCartesiano(0,0);
+        Punto2D p1 = new Punto2DCartesiano(1,1);
+
+        System.out.println(p0.distancia(p1));
+        assert( Math.abs(p0.distancia(p1)-Math.sqrt(2))<1E-10 );
+
+
+    }
 
 
 }
