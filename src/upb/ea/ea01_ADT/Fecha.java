@@ -59,7 +59,7 @@ public class Fecha {
         assert f2.diaDelAño()==365 : "El 31 de diciembre de 2025 es el dia 365 del año";
 
         Fecha f3 = new Fecha(2024,(byte)3,(byte)1);
-        assert f3.diaDelAño()==365 : "El 1 de marzo de 2024 es el dia 61 del año";
+        assert f3.diaDelAño()==61 : "El 1 de marzo de 2024 es el dia 61 del año";
 
 
     }
