@@ -44,6 +44,10 @@ public class Punto2DCartesiano implements Punto2D {
         System.out.println(p0.distancia(p1));
         assert( Math.abs(p0.distancia(p1)-Math.sqrt(2))<1E-10 );
 
+        Punto2D p2 = new Punto2DPolar(Math.sqrt(2), Math.toRadians(45));
+        assert p1.equals(p2) : "p1 y p2 deben ser iguales, son el mismo punto en el plano";
+        assert ! p0.equals(p1) : "p0 y p1 deben ser distintos";
+        assert ! p2.equals(p0) : "p2 y p0 deben ser distintos";
 
     }
 
