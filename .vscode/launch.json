@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fecha",
+            "request": "launch",
+            "mainClass": "upb.ea.ea01_ADT.Fecha",
+            "projectName": "EA_Ejercicios_Java_79cc3f3e",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
             "name": "Punto2DPolar",
             "request": "launch",
             "mainClass": "upb.ea.ea01_ADT.Punto2DPolar",

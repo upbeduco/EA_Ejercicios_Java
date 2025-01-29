@@ -53,10 +53,14 @@ public class Fecha {
         
         // Pruebas unitarias del método diaDelAño
         Fecha f1 = new Fecha(2025,(byte)1,(byte)31);
-        assert f1.diaDelAño()==31 : "El 31 de enero es el dia 31 del año";
+        assert f1.diaDelAño()==31 : "El 31 de enero de 2025 es el dia 31 del año";
 
         Fecha f2 = new Fecha(2025,(byte)12,(byte)31);
-        assert f2.diaDelAño()==365 : "El 31 de diciembre es el dia 365 del año";
+        assert f2.diaDelAño()==365 : "El 31 de diciembre de 2025 es el dia 365 del año";
+
+        Fecha f3 = new Fecha(2024,(byte)3,(byte)1);
+        assert f3.diaDelAño()==365 : "El 1 de marzo de 2024 es el dia 61 del año";
+
 
     }
 
