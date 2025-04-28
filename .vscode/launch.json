@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "runThreeSum",
+            "request": "launch",
+            "mainClass": "upb.ea.ea03_AnalisisDeAlgoritmos.runThreeSum",
+            "projectName": "EA_Ejercicios_Java_7eb9b2ae"
+        },
+        {
+            "type": "java",
             "name": "Punto2DPolar",
             "request": "launch",
             "mainClass": "upb.ea.ea01_ADT.Punto2DPolar",

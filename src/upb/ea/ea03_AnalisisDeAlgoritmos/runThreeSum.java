@@ -2,6 +2,7 @@ package upb.ea.ea03_AnalisisDeAlgoritmos;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.Stopwatch;
 import edu.princeton.cs.algs4.ThreeSum;
 
 public class runThreeSum {
@@ -17,8 +18,10 @@ public class runThreeSum {
     public static void main(String[] args) {
         // TODO medir el tiempo que se toma el conteo de ThreeSum
 
-        int[] a = randomArray(100);
+        int[] a = randomArray(1000);
+        Stopwatch w = new Stopwatch();
         int c = ThreeSum.count(a);
+        StdOut.println(w.elapsedTime());
 
         StdOut.println("Conteo: "+c);
     }
